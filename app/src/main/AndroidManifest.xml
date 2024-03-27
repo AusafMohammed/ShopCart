@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ShopCart"
+        tools:targetApi="31">
+        <activity
+            android:name=".stat_activity"
+            android:exported="false" />
+        <activity
+            android:name=".getall_coupons"
+            android:exported="false" />
+        <activity
+            android:name=".coupon_activity"
+            android:exported="false" />
+        <activity
+            android:name=".admin_activity"
+            android:exported="false" />
+        <activity
+            android:name=".checkout"
+            android:exported="false" />
+        <activity
+            android:name=".mycart"
+            android:exported="false" />
+        <activity
+            android:name=".buy_products_buyers"
+            android:exported="false" />
+        <activity
+            android:name=".sellers_myorders"
+            android:exported="false" />
+        <activity
+            android:name=".seller_selling_products"
+            android:exported="false" />
+        <activity
+            android:name=".paymentinfo"
+            android:exported="false" />
+        <activity
+            android:name=".user_info"
+            android:exported="false"
+            android:parentActivityName=".selleract" />
+        <activity
+            android:name=".BuyerAct"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".selleract"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
